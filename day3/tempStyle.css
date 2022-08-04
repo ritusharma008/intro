@@ -83,7 +83,7 @@ aside > .box{
     height: 150px;
     background-color: yellowgreen;
     width: 100%;
-}
+} 
 .box h1{
     color: aliceblue !important;
 }
@@ -113,6 +113,18 @@ article {
     width: 100%;
     background-size: cover;
 }
-.box1 {
-    background-image: url("");
+aside .box1 {
+    height: 150px;
+    width: 100%;
+    background-image: url("https://www.gethow.org/wp-content/uploads/2019/09/project.jpg");
+}
+aside .box2 {
+    height: 150px;
+    width: 100%;
+    background-image: url("https://dimensionless.in/wp-content/uploads/2018/12/projects-cover.jpg");
+}
+aside .box3 {
+    height: 150px;
+    width: 100%;
+    background-image: url("https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png");
 }
