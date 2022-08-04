@@ -8,6 +8,12 @@
     background-color: orange;
     color: rgb(107, 71, 4);
 }
+h1 {
+    text-shadow: 1px 2px black; 
+}
+p {
+    text-shadow: 1px 1px;  
+}
 .button {
     background-color: rgb(187, 148, 76);
     padding: 10px 12px;
@@ -29,17 +35,21 @@
     background-color: white;
     color: rgb(189, 132, 25);
 }
-.box1 , .box3 {
+.box1 , .box3, .box2 {
     padding: 20px;
     float : left;
     height: 25%;
-    width: 32%;
-    background-color: rgb(153, 106, 19);;
+    width: 25%;
+    background-color: rgb(153, 106, 19);
+    margin: 2%;
 }
 .box2 {
+    background-color: white;
+}
+/* .box2 {
     padding: 18px;
     float : left;
     height: 25%;
     width: 28%;
     background-color: white;
-}
+} */
