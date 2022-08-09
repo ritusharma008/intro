@@ -15,7 +15,7 @@ var dayFormat = "<br> Today Day: "+ week[date.getDay()];
 document.write(dayFormat);
 
 //Assignment 2
-document.body.style.border = "2px solid black";
+document.body.style.border = "2px solid green";
 document.body.style.margin = "30%";
 document.body.style.backgroundColor = "pink";
 document.body.style.fontSize = "20px";
