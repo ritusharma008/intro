@@ -10,23 +10,19 @@
 
 var date = new Date();
 var week = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-var dateFormat = "Today Date: " + date.getDate() + "/" + (date.getMonth()+1) + "/" + date.getFullYear() ;
+var dateFormat = "<i> Today Date: </i>" + date.getDate() + "/" + (date.getMonth()+1) + "/" + date.getFullYear() ;
 document.write(dateFormat) ; 
-var dayFormat = "<br> Today Day: "+ week[date.getDay()];
+var dayFormat = "<br> <i>Today Day: </i>"+ week[date.getDay()];
 document.write(dayFormat);
 
 //Assignment 2
-document.body.style.border = "2px solid black";
-document.body.style.textAlign="center";
-document.body.style.padding="10px";
-document.body.style.margin = "25%";
-document.body.style.backgroundColor = "pink";
-document.body.style.fontSize = "20px";
-document.body.style.color = "blue";
+document.body.style.backgroundColor = "lightblue";
+document.body.style.fontSize = "35px";
+// document.body.style.paddingTop="25%";
 // document.user.style.color = "pink"
 
 var user = window.prompt("Enter your name");
- document.write("<br>"+"Your name is: "+ user.fontcolor("green"));
+ document.write("<br>"+"<u> Your name is:</u> "+ user.fontcolor("voilet"));
 
 
 // assignment 3
