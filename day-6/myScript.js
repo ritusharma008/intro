@@ -18,7 +18,7 @@ document.write(dayFormat);
 //Assignment 2
 document.body.style.backgroundColor = "lightblue";
 document.body.style.fontSize = "35px";
-// document.body.style.paddingTop="25%";
+document.body.style.paddingBottom="25px";// document.body.style.paddingTop="25%";
 // document.user.style.color = "pink"
 
 var user = window.prompt("Enter your name");
