@@ -17,8 +17,9 @@ document.write(dayFormat);
 
 //Assignment 2
 document.body.style.border = "2px solid black";
-document.body.style.padding="20px";
-document.body.style.margin = "30%";
+document.body.style.textAlign="center";
+document.body.style.padding="10px";
+document.body.style.margin = "25%";
 document.body.style.backgroundColor = "pink";
 document.body.style.fontSize = "20px";
 document.body.style.color = "blue";
