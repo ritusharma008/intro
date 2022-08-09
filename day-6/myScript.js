@@ -15,13 +15,16 @@ var dayFormat = "<br> Today Day: "+ week[date.getDay()];
 document.write(dayFormat);
 
 //Assignment 2
-
-var user = window.prompt("Enter your name");
+document.body.style.border = "2px solid black";
+document.body.style.margin = "30%";
 document.body.style.backgroundColor = "pink";
 document.body.style.fontSize = "20px";
 document.body.style.color = "blue";
 // document.user.style.color = "pink"
-document.write("<br>"+"Your name is: "+ user);
+
+var user = window.prompt("Enter your name");
+ document.write("<br>"+"Your name is: "+ user.fontcolor("green"));
+
 
 // assignment 3
 var input1 = parseInt(window.prompt("enter first number"));
