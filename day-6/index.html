@@ -17,10 +17,22 @@
         .fly img {
             width: 15%;
             height: 8%;
-            padding-left: 31%;
-            padding-top: 15%;
+            /* padding-left: 31%;*/
+            padding-top: 15%; 
             align-items: center;
-
+            transform: translateX(50%);
+            animation: fly 2s linear infinite;
+        }
+        @keyframes fly {
+            0% {
+                transform: translateX(-150px);
+            }
+            50% {
+                transform: translateX(0px);
+            }
+            100% {
+                transform: translateX(0px);
+            }
         }
     </style>
 </head>
