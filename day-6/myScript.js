@@ -43,4 +43,4 @@ var divide = input1 / input2;
 document.write("<br>" + "<b> divide is: </b> " +divide);
 
 // Ques = 4
-// node myScript.jd
+// node myScript.js
