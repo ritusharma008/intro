@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        function frntback(str) {
+            if(str.length > 3) {
+                strLength = 3;
+
+                f = str.substring(0,3);
+                b = str.substring(str.length-3) 
+                return f+b;
+            }
+            else {
+                return str;
+            }
+        }
+        document.write(frntback("abcdefg")+ "<br>");
+        document.write(frntback("ab")+ "<br>");
+        document.write(frntback("abcd"));
+    </script>
+</body>
+</html>

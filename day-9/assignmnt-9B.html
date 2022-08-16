@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function student() {
+            this.firstName = "Ritu";
+            this.lastName = "sharma";
+
+            this.details = function() {
+                return "firstName is "+ this.firstName + " and lastName is " + this.lastName;
+            } 
+
+        }
+        var obj = new student();
+        alert(obj.details());
+    </script>
+</body>
+</html>
