@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>use of call and apply</title>
+</head>
+<body>
+    <script>
+        // Write a Program to use call() and apply() Method.
+
+    var obj = {
+        firstName: "ritu",
+        lastName: "sharma",
+        fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+    }
+    console.log(obj.fullName());
+
+    var person1 = {
+        firstName: "abc",
+        lastName: "xyz",
+    }
+    console.log(obj.fullName.call(person1));            // call
+    
+    var person = {
+        fullName : function(city,country) {
+            return this.firstName+" "+this.lastName+" "+ city +" "+ country;
+        }
+    }
+    console.log(person.fullName.apply(obj, ["mathura","India"]));           //apply
+
+    </script>
+</body>
+</html>
