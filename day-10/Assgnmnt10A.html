@@ -17,20 +17,20 @@
         return this.firstName + " " + this.lastName;
     }
     }
-    console.log(obj.fullName());
+    document.write(obj.fullName());
 
     var person1 = {
         firstName: "abc",
         lastName: "xyz",
     }
-    console.log(obj.fullName.call(person1));            // call
+    document.write(obj.fullName.call(person1)+"<br>");            // call
     
     var person = {
         fullName : function(city,country) {
             return this.firstName+" "+this.lastName+" "+ city +" "+ country;
         }
     }
-    console.log(person.fullName.apply(obj, ["mathura","India"]));           //apply
+    document.write(person.fullName.apply(obj, ["mathura","India"]));           //apply
 
     </script>
 </body>
