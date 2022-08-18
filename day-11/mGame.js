@@ -1,4 +1,4 @@
-const counter=0;
+var counter=0;
 var h1 = document.querySelector('h1');
 var strtMoles = document.querySelector('#mole');
 var muds = document.querySelector('#mud');
@@ -16,17 +16,19 @@ function start() {
     strtbtn.style.visibility = "hidden";
 
     for(let i=0;i<2;i++)  point[i].style.visibility ="visible";
-    for(let i =0;i<6;i++) dirts[i].style.visibility = "visible";
+    for(let i=0;i<6;i++) dirts[i].style.visibility = "visible";
     
     setInterval(() => {
         var ran=Math.floor(Math.random()*6);
         moles[ran].style.visibility="visible";
         setTimeout(() => {
         moles[ran].style.visibility="hidden";
-        }, 900);
-    }, 1000);   
+        }, 1100);
+    }, 1200);   
 }
-function click() {
-    document.getElementById("currentPoint").innerHTML = counter++;
+function kuch() {
+    counter++;
+    document.getElementById("currentPoint").innerHTML = counter;
+    console.log(counter)
 }
-
+console.log(counter);
