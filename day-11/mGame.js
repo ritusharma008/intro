@@ -26,9 +26,9 @@ function start() {
         }, 1100);
     }, 1200);   
 }
-function kuch() {
+function info() {
     counter++;
     document.getElementById("currentPoint").innerHTML = counter;
-    console.log(counter)
+    // console.log(counter)
 }
-console.log(counter);
+
