@@ -1,3 +1,4 @@
+const counter=0;
 var h1 = document.querySelector('h1');
 var strtMoles = document.querySelector('#mole');
 var muds = document.querySelector('#mud');
@@ -7,7 +8,7 @@ var point = document.querySelectorAll('.points');
 var dirts = document.querySelectorAll('.dirt');
 var moles = document.querySelectorAll('.mole');
 
-var c = 0;
+
 function start() {
     h1.style.visibility = "hidden";
     muds.style.visibility = "hidden";
@@ -21,12 +22,11 @@ function start() {
         var ran=Math.floor(Math.random()*6);
         moles[ran].style.visibility="visible";
         setTimeout(() => {
-            moles[ran].style.visibility="hidden";
+        moles[ran].style.visibility="hidden";
         }, 900);
     }, 1000);   
 }
 function click() {
-    c = c+1;
-    document.getElementById("currentPoint").innerHTML = c;
+    document.getElementById("currentPoint").innerHTML = counter++;
 }
 
