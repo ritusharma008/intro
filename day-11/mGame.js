@@ -23,8 +23,8 @@ function start() {
         moles[ran].style.visibility="visible";
         setTimeout(() => {
         moles[ran].style.visibility="hidden";
-        }, 1100);
-    }, 1200);   
+        }, 900);
+    }, 1000);   
 }
 function incr() {
 
