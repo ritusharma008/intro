@@ -26,9 +26,9 @@ function start() {
         }, 1100);
     }, 1200);   
 }
-function info() {
-    counter++;
-    document.getElementById("currentPoint").innerHTML = counter;
+function incr() {
+
+    document.getElementById("currentPoint").innerHTML = counter++;
     // console.log(counter)
 }
 
