@@ -31,13 +31,6 @@ btn.onclick = function createTodo(e) {
     todoList.appendChild(newDiv);
     todoInput.value = "";
 
-    
-    btn.onclick = localStorage;
-    function localStorage() {
-        var data = todoList.value;
-        window.localStorage.setItem("Info", data);
-    }
-
 }}
 
     todoList.onclick = function checkbtn(e) {
