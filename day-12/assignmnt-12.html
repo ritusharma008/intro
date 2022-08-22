@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="ass12.CSS"/>
+  </head>
+  <body>
+    <h1>To-do List</h1>>
+    <form>
+      <input type="text" class="todo-input"/>
+      <button>
+        <i class="fa fa-plus-square" aria-hidden="true"></i>
+      </button>
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+    <p id="output"> </p>
+    
+    <script src="ass12.js">
+
+        var output = document.getElementById("output");
+        var data = window.localStorage.getItem("Info");
+          if((data == null)) {
+              output.innerText = "no data available in local storage";
+          }
+          else output.innerText = data;
+
+        output.innerText = data;
+
+    </script>
+  </body>
+</html>

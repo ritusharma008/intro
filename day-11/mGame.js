@@ -8,13 +8,14 @@ var point = document.querySelectorAll('.points');
 var dirts = document.querySelectorAll('.dirt');
 var moles = document.querySelectorAll('.mole');
 
+var changeBg = document.querySelector('.chngeBg');
 
 function start() {
     h1.style.visibility = "hidden";
     muds.style.visibility = "hidden";
     strtMoles.style.visibility ="hidden";
     strtbtn.style.visibility = "hidden";
-
+    
     for(let i=0;i<2;i++)  point[i].style.visibility ="visible";
     for(let i=0;i<6;i++) dirts[i].style.visibility = "visible";
     
@@ -24,11 +25,10 @@ function start() {
         setTimeout(() => {
         moles[ran].style.visibility="hidden";
         }, 900);
-    }, 1000);   
+    }, 1000)   
 }
 function incr() {
-
     document.getElementById("currentPoint").innerHTML = counter++;
-    // console.log(counter)
+    // console.log(counter);
 }
 
