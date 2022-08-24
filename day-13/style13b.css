@@ -1,0 +1,79 @@
+body {
+    margin: 0%;
+    background-image: url("https://cdn3.photostockeditor.com/t/2411/coffee-white-ceramic-mug-on-brown-wooden-table-steaming-steaming-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2 {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+.container { 
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 35%;
+    background-color: black;
+    border: 2px solid black;
+    box-shadow: 2px 5px 5px white;
+    text-align: center;
+    border-radius: 10%;
+}
+.name {
+    margin: 10px;
+    padding: 8px;
+    width: 35%;
+}
+input {
+    box-shadow:1px 3px 3px white;
+    outline: none;
+}
+input:hover {
+    font-size: 15px;
+    color: maroon;
+    border: 2px solid maroon;
+}
+.mail {
+    margin: 10px;
+    padding: 8px;
+    width: 35%;
+}
+.pwrd {
+    padding: 8px;
+    width: 35%;
+}
+.checkbox {
+    margin: 4%;
+}
+.Position {
+    margin: 10px;
+    color: gray;
+    padding: 8px;
+    width: 38%;
+}
+.Position:hover {
+    font-size: 15px;
+    color: maroon;
+    border: 2px solid maroon;
+}
+.gender {
+    margin: 10px;
+    color: gray;
+    margin: 2%;
+    padding: 8px;
+    width: 38%;
+}
+.gender:hover {
+    font-size: 15px;
+    color: maroon;
+    border: 2px solid maroon;
+}
+button {
+    margin: 2%;
+    padding: 9px;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: maroon;
+    color: white;
+}
