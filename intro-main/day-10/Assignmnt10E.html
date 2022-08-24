@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using filter</title>
+</head>
+<body>
+    <script>
+        // Write a Program to Filter out people whose age is less than 25 in descending order.  
+
+        var people = [
+            { name: "Ashish", age: 23 },
+            { name: "jay", age: 24 },
+            { name: "Arvind", age: 26 },
+            { name: "Mahesh", age: 28 },
+            { name: "Jay", age: 19 }
+        ];
+        var result = people.filter((ages) => { return ages.age < 25 }).sort((n1,n2)=>n1.age-n2.age).reverse();
+         document.write(JSON.stringify(result ));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iterate objects using map</title>
+</head>
+<body>
+    <script>
+    // Write a Program to iterate an Array of Objects using map function.
+        var people = [
+            { name: "Ashish", age: 23 },
+            { name: "Ajay", age: 21 },
+            { name: "Arvind", age: 26 },
+            { name: "Mahesh", age: 28 },
+            { name: "Jay", age: 19 }
+        ];  
+    
+        var fullName = people.map((i) => { return  "<br>" + "Name is " + i.name + " and age is " +i.age  });
+        document.write(fullName);
+
+
+    </script>
+</body>
+</html>

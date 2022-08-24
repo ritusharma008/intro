@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #string {
+            width: 100%;
+            height: 100%;
+            color: rgb(13, 121, 62);
+            font-size: 50px;
+            text-align: center;
+            padding-top: 20%;
+            padding-bottom: 20%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-image: linear-gradient(rgb(0, 208, 255),rgb(240, 192, 255));
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body id="string">
+    <script> 
+        function frntback(str) {
+            if(str.length > 3) {
+                strLength = 3;
+
+                f = str.substring(0,3);
+                b = str.substring(str.length-3) 
+                return f+b;
+            }
+            else {
+                return str;
+            }
+        }
+        document.write(frntback("abcdefg")+ "<br>");
+        document.write(frntback("ab")+ "<br>");
+        document.write(frntback("abcd"));
+    </script>
+</body>
+</html>

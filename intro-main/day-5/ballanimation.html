@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BallAnimation</title>
+    <style>
+        .container {
+            width : 100%;
+            height: 100vh;
+            background-color: palegoldenrod;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .ball {
+            margin-bottom: 15%;
+            width: 70px;
+            height: 70px;
+            background-image: linear-gradient(green 50%,yellow 50%);
+            border-radius: 50%;
+            animation: loader 2s linear infinite;
+            animation-fill-mode: both;
+            
+            animation-direction: reverse;
+        }
+        @keyframes loader {
+            0% {
+                transform:translateY(100px) rotate(360deg);
+            }
+            50% {
+                transform:translateY(-100px) rotate(180deg);
+            }
+
+            100% {
+                transform: translateY(100px) rotate(0deg);
+            }
+        }
+        .shade{
+        
+            width:60px;
+            height: 30px;  
+            background-color: gray;
+            border-radius: 60%;
+            /* transition: all 0.3s ease-in-out; */
+            animation: shad 2s linear infinite;
+         }
+         @keyframes shad {
+            0% {
+                transform:scale(1);
+            }
+            50% {
+                transform:scale(.5);
+            }
+            100% {
+                transform:scale(1);
+            }
+         }
+
+        p {
+            font-size: 30px;
+            font-weight: bold;
+            text-overflow: uppercase;
+        }
+        .dot {
+            display: flex;
+        }
+        #point {
+            font-size: 30px;
+            animation: point 2s linear infinite;
+        }
+        @keyframes point {
+            0% {
+                opacity:1;
+            }
+            50% {
+                opacity:0;
+            }
+            100% {
+                opacity:1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+        <div class="shade"></div>
+        <div class="dot"> 
+            <p>Loading</p>
+            <p id="point"> . . .</p>
+        </div>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* ------------Initial Phase CSS--------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url("./yellowTD.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+  }
+  h1, form {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 50px;
+    text-shadow: 2px 5px 5px rgb(20, 20, 2);
+  }
+  
+  form input, form button {
+    box-shadow: 2px 5px 5px rgb(99, 99, 47);
+    padding: 10px;
+    border: none;
+    font-size: 24px;
+    background: white;
+    outline: none;
+    border: 2PX SOLID rgb(198, 198, 64);
+  }
+  form button {
+    color: blue;
+    background-color: rgb(241, 224, 40);
+    cursor: pointer;
+  }
+  form button:hover {
+    color: white;
+    background-color: skyblue;
+  }
+  
+  /* ----------------New List Container----------------- */
+  
+  .todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .todo-list {
+    list-style: none;
+    min-height: 25px;
+    /* background-color: white; */
+  }
+  
+  .todo {
+    border: 2px solid rgb(211, 195, 21);
+    background-color: white;
+    font-size: 24px;
+    margin: 8px;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 2px 5px 5px rgb(59, 54, 6);
+  }
+  .todo li {
+    padding-left: 5px;
+    flex: 1;
+  }
+  .optbtn , .dltbtn {
+    color: white;
+    background-color: rgb(227, 231, 37);
+    border:none;
+    padding: 16px;
+    outline: none;
+    font-size: 16px;
+  }
+  .optbtn:hover {
+    background-color: rgb(228, 200, 44);
+  }
+  .dltbtn {
+    background-color: rgb(161, 187, 192);
+  }
+  .dltbtn:hover {
+    background-color: rgb(44, 191, 228);
+  }
+  .todo_item {
+    margin: 0 10px;
+  }
+  .fa-trash , .fa-check {
+     pointer-events: none;
+  }
+  .check {
+    opacity: .5;
+    text-decoration: line-through;
+  }

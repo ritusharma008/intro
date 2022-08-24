@@ -1,0 +1,37 @@
+.body {
+    background-color:  rgb(222, 217, 217);
+}
+.header {
+    background-color: rgb(222, 217, 217);
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
+;
+}
+.img {
+    background-color: white;
+    padding-left: 6%;
+    padding-right: 10%;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+}
+.image {
+    background-image: url("https://static1.squarespace.com/static/5256f6e4e4b086e2b62842e2/54e82e02e4b03a84d29f3f55/54e830e1e4b0a4e937a7d196/1424503201010/?format=1000w");
+    width: 80vw;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+p {
+    font-size: 18px;
+}
+.list {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+li {
+    font-family: 'Times New Roman', Times, serif;
+}

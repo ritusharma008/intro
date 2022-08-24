@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #user {
+            width: 100%;
+            height: 100%;
+            color: rgb(13, 13, 121);
+            font-size: 50px;
+            text-align: center;
+            padding-top: 20%;
+            padding-bottom: 20%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-image: linear-gradient(rgb(146, 12, 12),rgb(239, 255, 192),rgb(116, 120, 202));
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body id="user">
+
+    <script>
+        function string(user) {
+            if(user.substring(0,3) === "new") {
+                return user;
+                
+            }
+            return "new " + user;
+        }
+        // document.write(string("new")+"<br>");
+        document.write(string("person"));
+    </script>
+
+</body>
+</html>

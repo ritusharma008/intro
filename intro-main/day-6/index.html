@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript  Fundamental</title>
+    <style>
+        .name {
+            background-image: url("./flower.webp");
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+        .fly img {
+            width: 15%;
+            height: 8%;
+            /* padding-left: 31%;*/
+            padding-top: 15%; 
+            align-items: center;
+            transform: translateX(0%);
+            animation: fly 4s linear infinite;
+        }
+        @keyframes fly {
+            0% {
+                transform: translateX(-150px);
+            }
+            50% {
+                transform: translateX(0px);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+    </style>
+</head>
+<body class="name">
+    <div class="fly">
+        <img src="./fly.gif" alt="butterfly">
+    </div>
+    <script src="./myScript.js">
+       
+        //document.write("hello world");
+        //document.body.style.backgroundColor = "pink";                    //js command / instruction 
+
+        // var isok = confirm("are you sure to go further");
+        // console.log(isok);
+
+        // var fullName = prompt("enter your full name");
+        // console.log(fullName);
+
+
+    </script>
+</body>
+</html>
