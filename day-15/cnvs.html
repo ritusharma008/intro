@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>    
+
+<script>
+    var can = document.querySelector('canvas');
+    const ctx = can.getContext('2d');
+
+    //Animation 
+    var circle = {
+        x:200,
+        y:200,
+        size: 30,
+        dx: 5,
+        dy: 5,
+    }
+//draw circle
+    ctx.beginPath();
+    ctx.arc(circle.x,circle.y ,circle.size, 0, Math.PI*2);
+    ctx.fillText = 'red';
+    ctx.fill();
+
+
+    function update() {
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        drawCircle();
+        circle.x += circle.dx;              // move in x direction
+        circle.y += circle.dy;
+
+    //detect ball
+    if (circle.x + circle.size > canvas.width || circle.x - circle.size < 0) 
+        circle.dx *= -1;
+    
+    if (circle.y + circle.size > canvas.height || circle.y - circle.size < 0) 
+        circle.dx *= -1;
+
+    requestAnimationFrame(update);
+        console.log(123);
+    }
+    update();                           //redraw many circles
+
+</script>
+
+</body>
+</html>

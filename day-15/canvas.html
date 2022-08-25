@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Api</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+
+        }
+        body {
+            border-radius: 10px;
+            min-height: 100vh;
+            background-color: rgba(0, 0, 0, 3);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #canvas {
+            background-color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Canvas API Demo</h1>
+    <canvas id="canvas" width="500" height="400"></canvas>
+
+    <script >
+        var can = document.querySelector('canvas');
+        const ctx = can.getContext('2d');
+        
+        //canvas.width =200
+        // canvas.width = window.innnerWidth; //size according to window
+        
+        fillStyle ='red';
+        ctx.fillrect(50,50,150,100);  //150 is width and 100 is height
+        
+        ctx.linewidth = 5;
+        ctx.strokeStyle = 'blue';
+        ctx.strokeRect(250,50,150,100);   // stroke means outline
+
+        ctx.roundrect(450,50,100,100, [10]);    // 10 is radius
+        ctx.roundrect = 'orange';
+        ctx.fill();
+
+        ctx.clearRect(40,40,140,90);
+
+        ctx.clearRect(0,0,canvas.width,canvas.height);   //erase all the content
+        
+        ctx.fillStyle = "green";
+        ctx.font ="30px arial";
+        ctx.fillText("hello world", 200,300);
+
+        ctx.fillStyle = "purple";
+        ctx.linewidth = 1;
+        ctx.fillText("hello world", 200,300);
+
+        //draw triangle
+        //path
+        ctx.beginPath();
+        ctx.moveTo(50, 50)
+        ctx.lineTo(150,50);
+        ctx.lineTo(100,200);  //ctx.closePath()
+        ctx.stroke();
+        ctx.fillStyle = 'coral';
+        ctx.fill();
+
+        //opposite triangle
+        ctx.beginPath();
+        ctx.moveTo(200, 50)
+        ctx.lineTo(150,200);
+        ctx.lineTo(250,200);  
+        ctx.closePath()
+        ctx.stroke();
+        ctx.fillStyle = 'coral';
+        ctx.fill();
+
+        //rectangle
+        ctx.beginPath();
+        ctx.rect(300,50,150,100);
+        ctx.fillStyle = 'blue';
+        ctx.fill();
+
+        //drawa arc
+        ctx.beginPath();
+        ctx.fillStyle = 'teal';
+
+        ctx.arc(300,300,100,0, Math.PI*2);  //x, y,radius,startangle
+        ctx.stroke();
+
+        // radian = (Math.PI)*2;  //full circle draw by this
+        // radian =(Math.PI);      //half circle
+
+
+    </script>
+
+</body>
+</html>

@@ -10,6 +10,7 @@ h2 {
     font-size: 30px;
 }
 .container { 
+    visibility: hidden;
     margin-top: 10%;
     margin-left: 30%;
     width: 35%;
