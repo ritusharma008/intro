@@ -15,17 +15,18 @@ const player = {
   dy: 0
 };
 
-const bird = {
-    // w: 50,
-    // h: 70,
-    x: 10,
-    y: 70,
-    dx: 0,
-     dy: 0
- };
-function flyBird() {
-    ctx.drawImage(birds,bird.x,bird.y, player.w,player.h);
-}
+// const bird = {
+//     // w: 50,
+//     // h: 70,
+//     x: 10,
+//     y: 70,
+//     dx: 0,
+//      dy: 0
+// };
+
+// function flyBird() {
+//     ctx.drawImage(birds,bird.x,bird.y, bird.w,bird.h);
+// }
 
 function drawPlayer() {
   ctx.drawImage(image, player.x, player.y, player.w, player.h);
@@ -44,8 +45,8 @@ function newPos() {
 
 
 // function newPosBird() {
-//     player.x += player.dx;
-//     player.y += player.dy;
+//     bird.x += bird.dx;
+//     bird.y += bird.dy;
   
 //     wallBirds();
 //   }
@@ -73,7 +74,7 @@ function detectWalls() {
   }
 }
 
-// detect wall for birds
+// // detect wall for birds
 // function wallBirds() {
 //     // Left wall
 //     if (bird.x < 0) {
@@ -99,18 +100,16 @@ function detectWalls() {
 
 // Create Animation
 function update() {
-
-
+  
   clear();
  
   drawPlayer();
 
-
-
   newPos();
 
+
   requestAnimationFrame(update);
-  flyBird();
+  // flyBird();
 }
 
 function moveUp() {
