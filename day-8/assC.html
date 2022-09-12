@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var marks=[10,20,30,80,50,60];
+    var count=0;
+    marks.forEach(element => {
+        if(element<30){
+            count++;
+        }  
+    });
+    if(count>0){
+        document.write(`All Students are not passed because marks of a student is [${marks}] <br>`);
+    }
+    else{
+        document.write(`All Students are passed because marks of a student is [${marks}] <br>`);
+    }
+</script>
+</body>
+</html>

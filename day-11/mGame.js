@@ -11,10 +11,10 @@ var moles = document.querySelectorAll('.mole');
 var changeBg = document.querySelector('.chngeBg');
 
 function start() {
-    h1.style.visibility = "hidden";
+    h1.style.visibility = "hidden";  
     muds.style.visibility = "hidden";
-    strtMoles.style.visibility ="hidden";
-    strtbtn.style.visibility = "hidden";
+    strtMoles.style.visibility ="hidden"; 
+    strtbtn.style.visibility = "hidden";   
     
     for(let i=0;i<2;i++)  point[i].style.visibility ="visible";
     for(let i=0;i<6;i++) dirts[i].style.visibility = "visible";
